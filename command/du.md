@@ -63,6 +63,13 @@ ubuntu@VM-0-14-ubuntu:~/git-work/linux-command$ du -sh * |sort -rh
 4.0K    LICENSE
 ```
 
+统计当前目录下所有目录的大小,以GB方式计
+```
+ubuntu@VM-0-14-ubuntu:~/git-work/linux-command$ du -sh * | grep G | sort -hr
+10G    command
+1G     dist
+```
+
 只显示当前目录下子目录的大小。
 
 ```shell
@@ -98,5 +105,3 @@ ubuntu@VM-0-14-ubuntu:~/git-work/linux-command/assets$ du -s .
 ubuntu@VM-0-14-ubuntu:~/git-work/linux-command/assets$ du -sh .
 1.9M    .
 ```
-
-
