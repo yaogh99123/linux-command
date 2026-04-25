@@ -475,5 +475,12 @@ sed -n '/SCC/{n;p}' URFILE
 awk '/SCC/{getline; print}' URFILE
 ```
 
+###  替换文件带有空行的数据 
 
+```shell
 
+sed -i '' '/^$/d' ./dict/python.dict
+
+find ./dict/ -name "*.dict" -exec sed -i '' '/^$/d' {} +
+
+```
